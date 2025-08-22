@@ -1,0 +1,86 @@
+import {StyleSheet,Dimensions} from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    marginHorizontal: 16,
+    marginVertical: 12,
+    borderRadius: 22,
+    overflow: 'hidden',
+    shadowColor: '#1a1a1a',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.18,
+    shadowRadius: 16,
+    elevation: 12,
+    backgroundColor: 'rgba(255,255,255,0.18)', // glassmorphism
+    borderWidth: 1.5,
+    borderColor: 'rgba(200,200,255,0.18)',
+    backdropFilter: 'blur(12px)', // only works on web, for native use BlurView
+  },
+  gradient: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '100%',
+    borderRadius: 22,
+    zIndex: -1,
+  },
+  floatingLabel: {
+    position: 'absolute',
+    top: 18,
+    left: 18,
+    backgroundColor: 'rgba(0,0,0,0.55)',
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 12,
+    zIndex: 2,
+  },
+  floatingLabelText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 13,
+    letterSpacing: 0.5,
+  },
+  image: {
+    height: Dimensions.get('window').height / 3.2,
+    width: '100%',
+    borderTopLeftRadius: 22,
+    borderTopRightRadius: 22,
+    resizeMode: 'cover',
+  },
+  content: {
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    backgroundColor: 'rgba(255,255,255,0.7)',
+    borderBottomLeftRadius: 22,
+    borderBottomRightRadius: 22,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '800',
+    color: '#1a1a2e',
+    marginBottom: 8,
+    letterSpacing: 0.3,
+    textShadowColor: 'rgba(0,0,0,0.08)',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 4,
+  },
+  description: {
+    fontSize: 17,
+    color: '#3a3a5a',
+    marginBottom: 10,
+    lineHeight: 24,
+    fontWeight: '500',
+  },
+  meta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 8,
+  },
+  metaText: {
+    fontSize: 14,
+    color: '#6a7fa3',
+    marginLeft: 6,
+    fontWeight: '600',
+  },
+});
